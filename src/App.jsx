@@ -172,8 +172,8 @@ export default function App() {
       title: "LLM-Based Dynamic Query Portal for SQL Databases", 
       period: "April 2025- May 2025",
       description: "• Developed a portal enabling admins to query databases using natural language, eliminating the need for manual SQL writing.\n • Integrated Claude with REST API backend using LLMOps principles. Employed prompt engineering to improve response and query accuracy.\n • Experimented with Gemini APIs, Hugging Face models, and Mistral, comparing their performance for backend inference. \n • Enabled large-event administrators to flexibly retrieve insights such as room allocations and registration summaries through prompts.",
-      technologies: ["LLMs (with Claude, Gemini, Mistral, Hugging Face)","Prompt Engineering","Restful APIs", "MySQL" ],
-      link: "#",
+      technologies: ["LLMs","Prompt Engineering","Restful APIs", "MySQL" ],
+      link: "https://query-ssr.netlify.app/",
       sourceCodeLink: ' https://github.com/Parami-Kris/render-backend/'
     }
   ];
