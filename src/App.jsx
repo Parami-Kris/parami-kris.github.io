@@ -190,7 +190,7 @@ export default function App() {
             </Badge>
           </div>
           <h4 className="mb-6">Hey There!👋</h4>
-          <p className="text-m text-muted mb-8 container-sm leading-relaxed" style={{color: 'rgb(221 224 182 / 69%)'}}>
+          <p className="text-m text-muted mb-8 container-sm leading-relaxed"  style={{color: 'rgb(221 224 182 / 69%)', fontWeight:'bold',textShadow:'none'}}>
             I'm <span className="sketch-highlight"> Parami </span>. I'm Passionate about Python, Data Science, Web Dev, GenAI & Language Models.
             I love building things that think. From dynamic full-stack web apps to LLM-powered apps to deep learning models, I enjoy solving complex problems with clean code and creativity.
             I'm currently exploring open-source LLMs & building smart, human-centric AI tools.
