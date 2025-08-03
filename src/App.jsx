@@ -119,7 +119,7 @@ export default function App() {
 
   const skills = {
     "Languages & Libraries": ["Python", "JavaScript", "ReactJS", "HTML", "CSS", "Flask", "Pandas", "NumPy", "TensorFlow", "PyTorch", "Scikit-learn"],
-    "AI & Data Science": ["Machine Learning (MLOps)", "Deep Learning (DL)", "Language Models (LLMOps)", "Natural Language Processing (NLP)", "Computer Vision (YOLO)", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Prompt Engineering"],
+    "AI & Data Science": ["Machine Learning", "Deep Learning", "Language Models (LLMOps)", "Natural Language Processing", "Computer Vision (YOLO)", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Prompt Engineering"],
     "Tools & Platforms": ["MySQL", "Power BI", "Tableau", "Streamlit", "Git", "KNIME", "AWS", "Google Cloud Platform(GCP)", "Robotic Process Automation(RPA)"],
     "Core": ["Data Structures & Algorithms", "API Integration(RESTful APIs)", "Data Visualization", "Data mining", "Big Data"]
   };
@@ -207,8 +207,8 @@ export default function App() {
             <CardContent className='bout'>
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
                  &rarr; I'm a recent B.Tech graduate in Artificial Intelligence and Data Science from Easwari Engineering College, with a strong foundation in core engineering and modern tech stacks. <br></br><br></br>
-                 &rarr; My academic journey was shaped by hands-on learning across Python, Machine Learning, Deep Learning, and Web Development. <br></br><br></br>  &rarr; I've built meaningful projects like an early Alzheimer’s detection model
-                using deep learning and developed full-stack applications like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a>, <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
+                 &rarr; My academic journey was shaped by hands-on learning across Python, Machine Learning, Deep Learning, and Web Development. <br></br><br></br>  &rarr; I've built meaningful projects like Early Alzheimer’s detection model
+                using deep learning, developed fullstack applications like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a>, <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
                 &rarr; I’m particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, exploring LLMs like Mistral and
                 HuggingFace Transformers, and integrating APIs like Claude and Gemini to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I’m not coding, I’m often exploring new ideas in AI, sharpening my 
                 problem-solving skills through DSA, or collaborating on innovative tech projects.
