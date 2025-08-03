@@ -119,7 +119,7 @@ export default function App() {
 
   const skills = {
     "Languages & Libraries": ["Python", "JavaScript", "ReactJS", "HTML", "CSS", "Flask", "Pandas", "NumPy", "TensorFlow", "PyTorch", "Scikit-learn"],
-    "AI & Data Science": ["Machine Learning", "Prompt Engineering", "Deep Learning", "Attention Mechanisms", "Language Models (LLMOps)", "Natural Language Processing", "Computer Vision (YOLO)", "Autoencoders", "Time Series Modeling (LSTM)"],
+    "AI & Data Science": ["Machine Learning", "Prompt Engineering", "Deep Learning", "Attention Mechanisms", "Language Models (LLMOps)", "Autoencoders", "Computer Vision (YOLO)", "Natural Language Processing", "Time Series Modeling (LSTM)"],
     "Tools & Platforms": ["MySQL", "Power BI", "Tableau", "Streamlit", "Git", "KNIME", "AWS", "Google Cloud Platform(GCP)", "Robotic Process Automation(RPA)"],
     "Core": ["Data Structures & Algorithms", "API Integration(RESTful APIs)", "Data Visualization", "Data mining", "Big Data"]
   };
