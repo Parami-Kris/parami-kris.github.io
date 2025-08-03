@@ -320,7 +320,7 @@ export default function App() {
                       <Badge key={tech} variant="secondary">{tech}</Badge>
                     ))}
                   </div>
-                  {project.title.includes("LLM") ? (<div className="flex gap-2" style={{ marginTop: "1cm" }}>  
+                  {project.title.includes("LLM") ? (<div className="flex gap-2" style={{ marginTop: "1.3cm" }}>  
                      <Button onClick={() => window.open(project.link, "_blank")} variant="outline" size="sm" className="w-half">
                       <ExternalLinkIcon />
                       <span className="ml-2">View Project</span>
@@ -331,7 +331,7 @@ export default function App() {
                       </Button>
                     </div>
                   ) : (
-                    <Button onClick={() => window.open(project.link, "_blank")} style={{...(project.title.includes("Alzheimer") && { marginTop: "1cm" })}} variant="outline" size="sm" className="w-full">
+                    <Button onClick={() => window.open(project.link, "_blank")} style={{...(project.title.includes("Alzheimer") )}} variant="outline" size="sm" className="w-full">
                     <ExternalLinkIcon />
                     <span className="ml-2">View Project</span>
                     </Button>
