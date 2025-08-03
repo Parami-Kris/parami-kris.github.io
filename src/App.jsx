@@ -208,7 +208,7 @@ export default function App() {
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
                  &rarr; I'm a recent B.Tech graduate in Artificial Intelligence and Data Science from Easwari Engineering College, with a strong foundation in core engineering and modern tech stacks. <br></br><br></br>
                  &rarr; My academic journey was shaped by hands-on learning across Python, Machine Learning, Deep Learning, and Web Development. <br></br><br></br>  &rarr; I've built projects like Early Alzheimer’s detection model
-                using deep learning and developed fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a>, <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
+                using deep learning and developed fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
                 &rarr; I’m particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, exploring LLMs like Mistral and
                 HuggingFace Transformers, and integrating APIs like Claude and Gemini to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I’m not coding, I’m often exploring new ideas in AI, sharpening my 
                 problem-solving skills through DSA, or collaborating on innovative tech projects.
