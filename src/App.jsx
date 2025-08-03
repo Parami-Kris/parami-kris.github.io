@@ -165,7 +165,7 @@ export default function App() {
       title: "Early Detection of Alzheimer's using Deep Learning",
       period: "August 2024- March 2025",
       description: "• Utilized brain image and biomarker data from ADNI dataset. Preprocessed them and trained DL models for diagnostics. \n • Used Feature Extraction such as ResNet and autoencoders. Built a fusion model with custom CNN for MRI images combined with MLP for biomarkers.\n• Implemented LSTM for progression prediction with Attention mechanism. Used Streamlit for front-end UI.",
-      technologies: ["ResNet", "Autoencoders", "Streamlit", "CNN (Convolutional Neural Nets)", "MLP (Multi-Layer Perceptron)" ],
+      technologies: ["ResNet", "MLP (Multi-Layer Perceptron)", "Autoencoders", "Streamlit", "CNN (Convolutional Neural Nets)"],
       link: "https://drive.google.com/file/d/1AgF2NKZiPs1RHWf8h3YvC16WyKJr3z4y/view?usp=drive_link"
     },
     {
