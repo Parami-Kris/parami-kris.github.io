@@ -119,7 +119,7 @@ export default function App() {
 
   const skills = {
     "Languages & Libraries": ["Python", "JavaScript", "ReactJS", "HTML", "CSS", "Flask", "Pandas", "NumPy", "TensorFlow", "PyTorch", "Scikit-learn"],
-    "AI & Data Science": ["Machine Learning", "Deep Learning", "Language Models (LLMOps)", "Natural Language Processing", "Computer Vision (YOLO)", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Prompt Engineering"],
+    "AI & Data Science": ["Machine Learning", "Attention Mechanisms", "Deep Learning", "Prompt Engineering", "Language Models (LLMOps)", "Natural Language Processing", "Computer Vision (YOLO)", "Autoencoders", "Time Series Modeling (LSTM)"],
     "Tools & Platforms": ["MySQL", "Power BI", "Tableau", "Streamlit", "Git", "KNIME", "AWS", "Google Cloud Platform(GCP)", "Robotic Process Automation(RPA)"],
     "Core": ["Data Structures & Algorithms", "API Integration(RESTful APIs)", "Data Visualization", "Data mining", "Big Data"]
   };
@@ -165,14 +165,14 @@ export default function App() {
       title: "Early Detection of Alzheimer's using Deep Learning",
       period: "August 2024- March 2025",
       description: "• Utilized brain image and biomarker data from ADNI dataset. Preprocessed them and trained DL models for diagnostics. \n • Used Feature Extraction such as ResNet and autoencoders. Built a fusion model with custom CNN for MRI images combined with MLP for biomarkers.\n• Implemented LSTM for progression prediction with Attention mechanism. Used Streamlit for front-end UI.",
-      technologies: ["ResNet", "CNN (Convolutional Neural Nets)", "Autoencoders", "Streamlit","MLP (Multi-Layer Perceptron)" ],
+      technologies: ["ResNet", "Autoencoders", "Streamlit", "CNN (Convolutional Neural Nets)", "MLP (Multi-Layer Perceptron)" ],
       link: "https://drive.google.com/file/d/1AgF2NKZiPs1RHWf8h3YvC16WyKJr3z4y/view?usp=drive_link"
     },
     {
       title: "LLM-Based Dynamic Query Portal for SQL Databases", 
       period: "April 2025- May 2025",
       description: "• Developed a portal enabling admins to query databases using natural language, eliminating the need for manual SQL writing.\n • Integrated Claude with REST API backend using LLMOps principles. Employed prompt engineering to improve response and query accuracy.\n • Experimented with Gemini APIs, Hugging Face models, and Mistral, comparing their performance for backend inference. \n • Enabled large-event administrators to flexibly retrieve insights such as room allocations and registration summaries through prompts.",
-      technologies: ["LLMs","Prompt Engineering","Restful APIs", "MySQL" ],
+      technologies: ["LLMs", "Prompt Engineering", "MySQL", "Restful APIs" ],
       link: "https://query-ssr.netlify.app/",
       sourceCodeLink: ' https://github.com/Parami-Kris/render-backend/'
     }
@@ -207,8 +207,8 @@ export default function App() {
             <CardContent className='bout'>
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
                  &rarr; I'm a recent B.Tech graduate in Artificial Intelligence and Data Science from Easwari Engineering College, with a strong foundation in core engineering and modern tech stacks. <br></br><br></br>
-                 &rarr; My academic journey was shaped by hands-on learning across Python, Machine Learning, Deep Learning, and Web Development. <br></br><br></br>  &rarr; I've built meaningful projects like Early Alzheimer’s detection model
-                using deep learning, developed fullstack applications like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a>, <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
+                 &rarr; My academic journey was shaped by hands-on learning across Python, Machine Learning, Deep Learning, and Web Development. <br></br><br></br>  &rarr; I've built projects like Early Alzheimer’s detection model
+                using deep learning and developed fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a>, <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
                 &rarr; I’m particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, exploring LLMs like Mistral and
                 HuggingFace Transformers, and integrating APIs like Claude and Gemini to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I’m not coding, I’m often exploring new ideas in AI, sharpening my 
                 problem-solving skills through DSA, or collaborating on innovative tech projects.
@@ -283,7 +283,7 @@ export default function App() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2" style={{textAlign:'justify'}}>
                     {exp.achievements.map((achievement, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="bullet-point"></span>
@@ -383,7 +383,7 @@ export default function App() {
           <Card className="cnct" >
             <CardContent className="p-8 text-center space-y-6">
               <p className="text-m text-muted">
-                Interested in collaborating on AI / ML / Web Dev projects or discussing the latest in GenAI?
+                Interested in collaborating on AI/ ML/ Web Dev projects or discussing the latest in GenAI?
                 I'd love to hear from you!
               </p>
               <div className="flex flex-wrap justify-center gap-4">
