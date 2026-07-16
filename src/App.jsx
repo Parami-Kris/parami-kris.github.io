@@ -118,63 +118,94 @@ const Separator = ({ orientation = "horizontal", className = "" }) => (
 export default function App() {
 
   const skills = {
-    "Languages & Libraries": ["Python", "JavaScript", "ReactJS", "HTML", "CSS", "Flask", "Pandas", "NumPy", "TensorFlow", "PyTorch", "Scikit-learn"],
-    "AI & Data Science": ["Machine Learning", "Prompt Engineering", "Deep Learning", "Attention Mechanisms", "Language Models (LLMOps)", "Autoencoders", "Computer Vision (YOLO)", "Natural Language Processing", "Time Series Modeling (LSTM)"],
-    "Tools & Platforms": ["MySQL", "Power BI", "Tableau", "Streamlit", "Git", "KNIME", "AWS", "Google Cloud Platform(GCP)", "Robotic Process Automation(RPA)"],
-    "Core": ["Data Structures & Algorithms", "API Integration(RESTful APIs)", "Data Visualization", "Data mining", "Big Data"]
+    "Languages & Libraries": ["Python", "JavaScript", "TypeScript", "ReactJS", "HTML", "CSS", "FastAPI", "RestAPI", "TensorFlow"],
+    "AI & Data Science": ["Machine Learning", "Deep Learning", "Natural Language Processing", "LLM", "LangGraph", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Prompt Engineering", "Sentence-Transformer Embeddings", "Data Visualization", "Data Mining"],
+    "Tools & Platforms": ["MySQL", "Power BI", "Git", "pytest", "Docker", "Hugging Face Spaces", "Docling", "AWS", "KNIME", "Robotic Process Automation (RPA)"],
+    "Core": ["Data Structures & Algorithms", "Object-Oriented Programming (OOPs)", "Software Engineering Fundamentals"]
   };
 
   const experience = [
     {
-      title: "Data Science Intern",
+      title: "AI Engineer Consultant",
+      previousRole: "Promoted from AI Intern · February 2026 – May 2026",
       company: "Infiswift Technologies",
       location: "Pune, India",
-      period: "June 2023 – July 2023",
+      period: "June 2026 – Present",
       achievements: [
-        "• Created and preprocessed a large weather dataset using Power BI, which enhanced data quality for AQI prediction.",
-        "• Trained and evaluated multiple machine learning models and performed hyperparameter tuning with Randomized Search, achieving best accuracy of 95% for RMSE.",
-        "• Implemented YOLO (You Only Look Once) for real-time object detection in images and videos."
+        "• Built an AI extraction pipeline (LangGraph, Google Gemini, Docling) to parse complex technical PDF blueprints into validated structured JSON (layout geometry, equipment metadata, numeric parameters) for downstream automation.",
+        "• Developed Python desktop automation (Pywinauto, Pandas) on Windows EC2 to drive legacy GUI applications programmatically, with AMI/userdata bootstrap so workers start with env, credentials, and run config prewired.",
+        "• Integrated EC2 workers with backend services via AWS SQS (command/status, async job lifecycle), S3 (inputs/outputs), and MySQL (state and results persistence).",
+        "• Supported delivery through Jenkins (Docker integration tests) and cross-team collaboration via GitHub and Jira."
       ]
     },
     {
-      title: "Web developer",
-      company: "Sacred Seva Foundation(NGO)",
+      title: "Junior AI Developer",
+      company: "SEnergy",
+      location: "Chennai, India",
+      period: "August 2025 – January 2026",
+      achievements: [
+        "• Developed logic-based Python algorithms and machine learning models for financial trading systems, covering data collection, preprocessing, modeling, debugging, backtesting strategies and hyperparameter tuning.",
+        "• Employed MySQL through PHPMyAdmin and key-db via Redis for real-time data storage, retrieval, and management.",
+        "• Utilized APIs to retrieve live trade data and generated paper trades with the responses in a pipeline."
+      ]
+    },
+    {
+      title: "Data Analytics Intern",
+      company: "CoEZET, IIT Madras",
+      location: "Chennai, India",
+      period: "June 2024",
+      achievements: [
+        "• Analyzed 15 months of toll plaza traffic data across India, performing statistical analysis on big data to identify top N corridors for introducing zero-emission trucks with KNIME.",
+        "• Cleaned data by removing outliers and duplicates, applied cross joins to filter plazas based on approximate distances, and visualized traffic distributions by vehicle category using Power BI."
+      ]
+    },
+    {
+      title: "Web Developer",
+      company: "Sacred Seva Foundation (NGO)",
       location: "Mumbai, India",
       period: "December 2023 – March 2024",
       achievements: [
-        "• Created a functional website for an NGO that provides information on their past needs, projects, and objectives, helping to raise funds and connect with the community.",
+        "• Created a functional website for an NGO using ReactJS and CSS that highlights its mission, projects, and initiatives, helping raise awareness and connect with the community.",
         "• Added interactive features like volunteer sign-up forms, making it easier for people to get involved and support the NGO's work.",
-        "• Designed the website to be responsive, user-friendly, and easily navigable, irrespective of the device they use."
+        "• Designed the website to be responsive, user-friendly, and easily navigable, irrespective of the device used."
       ]
     },
     {
-      title: "Data Analyst Intern",
-      company: "CoEZET, IIT Madras",
-      location: "Chennai, India", 
-      period: "June 2024 – July 2024",
+      title: "Data Science Intern",
+      company: "Infiswift Technologies",
+      location: "Pune, India",
+      period: "June 2023",
       achievements: [
-        "• Analyzed 15 months of toll plaza traffic data across India, eliminating outliers and identifying top N corridors for introducing zero-emission trucks and KNIME.",
-        "• Conducted statistical analysis on big data, eliminating data duplication, and used cross join to filter plazas based on approximate distances.",
-        "• Visualized traffic data to display the distribution of various vehicle categories with Power BI."
+        "• Cleaned and preprocessed a large weather dataset using Python, which enhanced data quality for AQI prediction.",
+        "• Trained and evaluated multiple machine learning models and performed hyperparameter tuning with Randomized Search, achieving a best accuracy (R²) of 0.62.",
+        "• Implemented YOLO (You Only Look Once) for real-time object detection in images and videos."
       ]
     }
   ];
 
   const projects = [
     {
-      title: "Early Detection of Alzheimer's using Deep Learning",
-      period: "August 2024- March 2025",
-      description: "• Utilized brain image and biomarker data from ADNI dataset. Preprocessed them and trained DL models for diagnostics. \n • Used Feature Extraction such as ResNet and autoencoders. Built a fusion model with custom CNN for MRI images combined with MLP for biomarkers.\n• Implemented LSTM for progression prediction with Attention mechanism. Used Streamlit for front-end UI.",
-      technologies: ["ResNet", "MLP (Multi-Layer Perceptron)", "Autoencoders", "Streamlit", "CNN (Convolutional Neural Nets)"],
-      link: "https://drive.google.com/file/d/1AgF2NKZiPs1RHWf8h3YvC16WyKJr3z4y/view?usp=drive_link"
+      title: "AI Talent Intelligence Platform",
+      period: "July 2026 – Present",
+      description: "• Built and deployed a full-stack AI recruiting platform (FastAPI, React/TypeScript, MySQL) using Docling + Gemini LLMs for resume/JD parsing and evidence-backed candidate ranking, plus job-seeker qualification-gap analysis, multi-candidate comparison and CSV export.\n• Designed a LangGraph-orchestrated ranking pipeline with a human-in-the-loop review checkpoint, persisting state to MySQL so recruiter decisions survive process restarts.\n• Built a job search feature aggregating live listings (SerpApi) with LLM-based (Groq) query expansion, plus a personalized recommendation layer that weights each candidate's view/apply/like activity to rank and suggest jobs, even with no search keyword entered.\n• Built a synthetic benchmark suite (pytest-integrated) validating ranking-pipeline correctness across eligibility gating, job-hopper detection, and edge-case fallback scenarios.",
+      technologies: ["FastAPI", "React", "TypeScript", "LangGraph", "Gemini", "MySQL", "Docling", "pytest"],
+      link: "https://parami-kris.github.io/AI-Talent-Intelligence-Platform/",
+      sourceCodeLink: "https://github.com/Parami-Kris/AI-Talent-Intelligence-Platform"
     },
     {
-      title: "LLM-Based Dynamic Query Portal for SQL Databases", 
-      period: "April 2025- May 2025",
-      description: "• Developed a portal enabling admins to query databases using natural language, eliminating the need for manual SQL writing.\n • Integrated Claude with REST API backend using LLMOps principles. Employed prompt engineering to improve response and query accuracy.\n • Experimented with Gemini APIs, Hugging Face models, and Mistral, comparing their performance for backend inference. \n • Enabled large-event administrators to flexibly retrieve insights such as room allocations and registration summaries through prompts.",
-      technologies: ["LLMs", "Prompt Engineering", "MySQL", "Restful APIs" ],
+      title: "LLM-Based Dynamic Query Portal for SQL Databases",
+      period: "April 2025 – Present",
+      description: "• Built a natural-language-to-SQL query engine (Claude API, Flask) that translates admin questions into SQL, executed against a live MySQL database through a 3-layer defense (statement guard, EXPLAIN-based schema validation, read-only DB user) blocking malformed or unsafe queries.\n• Added question-level caching and rate limiting (Flask-Limiter) to control API cost and abuse, plus a semantic search fallback (sentence-transformer embeddings) for free-text queries and a /dashboard endpoint for aggregate stats.\n• Containerized and deployed via GitHub Actions CI/CD to Hugging Face Spaces; enables event administrators to query ~500 groups / ~1,000 attendees via natural language instead of manual spreadsheet lookups.",
+      technologies: ["Claude API", "Flask", "MySQL", "Sentence-Transformer Embeddings", "Docker", "GitHub Actions"],
       link: "https://query-ssr.netlify.app/",
-      sourceCodeLink: ' https://github.com/Parami-Kris/render-backend/'
+      sourceCodeLink: 'https://github.com/Parami-Kris/render-backend/'
+    },
+    {
+      title: "Early Detection of Alzheimer's using Deep Learning",
+      period: "August 2024 – March 2025",
+      description: "• Collected brain image and biomarker data from the ADNI dataset and preprocessed it; trained and deployed deep learning models for medical diagnostics with a Streamlit front-end UI.\n• Built a combined model with feature extraction via ResNet + custom CNN and Autoencoders + MLP, hypertuning parameters to an accuracy of 83%.\n• Implemented LSTM for progression prediction with an Attention mechanism, reaching an accuracy of 86%.",
+      technologies: ["ResNet", "CNN (Convolutional Neural Nets)", "Autoencoders", "MLP (Multi-Layer Perceptron)", "LSTM", "Attention Mechanism", "Streamlit"],
+      link: "https://drive.google.com/file/d/1AgF2NKZiPs1RHWf8h3YvC16WyKJr3z4y/view?usp=drive_link"
     }
   ];
 
@@ -206,11 +237,11 @@ export default function App() {
           <Card className="me container-md" >
             <CardContent className='bout'>
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
-                 &rarr; I'm a recent B.Tech graduate in Artificial Intelligence and Data Science from Easwari Engineering College, with a strong foundation in core engineering and modern tech stacks. <br></br><br></br>
-                 &rarr; My academic journey was shaped by hands-on learning across Python, Machine Learning, Deep Learning, and Web Development. <br></br><br></br>  &rarr; I've built projects like Early Alzheimer’s detection model
-                using deep learning and developed fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>  blending creativity with code to solve real-world problems.<br></br><br></br>
-                &rarr; I’m particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, exploring LLMs like Mistral and
-                HuggingFace Transformers, and integrating APIs like Claude and Gemini to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I’m not coding, I’m often exploring new ideas in AI, sharpening my 
+                 &rarr; I'm an AI Engineer Consultant at Infiswift Technologies, with a B.Tech in Artificial Intelligence and Data Science from Easwari Engineering College (2025). I'm about to begin my M.Sc in Advanced Artificial Intelligence at University College Dublin this September. <br></br><br></br>
+                 &rarr; My path so far has run through AI extraction pipelines, trading systems, and full-stack web development, across roles at Infiswift Technologies and SEnergy. <br></br><br></br> &rarr; I've built projects like the <a href='https://parami-kris.github.io/AI-Talent-Intelligence-Platform/' id='pg'>AI Talent Intelligence Platform</a> — a full-stack recruiting platform with LangGraph-orchestrated ranking and evidence-backed candidate scoring — an Early Alzheimer's detection model
+                using deep learning, and fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>, blending creativity with code to solve real-world problems.<br></br><br></br>
+                &rarr; I'm particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, orchestrating LLM pipelines with LangGraph, and
+                integrating APIs like Gemini, Claude, and Groq to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I'm not coding, I'm often exploring new ideas in AI, sharpening my
                 problem-solving skills through DSA, or collaborating on innovative tech projects.
               </p>
             </CardContent>
@@ -267,6 +298,9 @@ export default function App() {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <div>
                       <CardTitle>{exp.title}</CardTitle>
+                      {exp.previousRole && (
+                        <p className="text-sm text-muted mt-0.5">{exp.previousRole}</p>
+                      )}
                       <CardDescription className="flex items-center gap-2 mt-1">
                         <span>{exp.company}</span>
                         <Separator orientation="vertical" />
@@ -301,26 +335,26 @@ export default function App() {
         <section>
           <div className='s5 sect'style={{backgroundImage:"url('section5.jpg')"}}></div>
           <h4 className="mb-12 text-center">Academic Projects</h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" id='grid-section'style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 1rem" }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 project-cols" id='grid-section'style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 1rem" }}>
             {projects.map((project, index) => (
-              <Card key={index} className="h-full">
+              <Card key={index} className="h-full flex flex-col">
                 <CardHeader>
-                  <div className="flex justify-between items-start gap-4">
+                  <div className="flex flex-col gap-2">
                     <CardTitle className="leading-tight">{project.title}</CardTitle>
-                    <Badge variant="outline" className="flex items-center gap-1 whitespace-nowrap">
+                    <Badge variant="outline" className="flex items-center gap-1 whitespace-nowrap w-fit">
                       <CalendarIcon />
                       <span>{project.period}</span>
                     </Badge>
                   </div>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p style={{whiteSpace: "pre-line" ,textAlign:'justify',color:'rgb(166 168 140 / 61%)', lineHeight: "1.8"}} className="text-muted leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2" style={project.title.includes("Alzheimer") ? { marginTop: "1.75cm" } : {}}>
+                <CardContent className="space-y-4 flex flex-col flex-grow">
+                  <p style={{whiteSpace: "pre-line" ,textAlign:'justify',color:'rgb(166 168 140 / 61%)', lineHeight: "1.8", flexGrow: 1}} className="text-muted leading-relaxed">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary">{tech}</Badge>
                     ))}
                   </div>
-                  {project.title.includes("LLM") ? (<div className="flex gap-2" style={{ marginTop: "1.3cm" }}>  
+                  {project.sourceCodeLink ? (<div className="flex gap-2">
                      <Button onClick={() => window.open(project.link, "_blank")} variant="outline" size="sm" className="w-half">
                       <ExternalLinkIcon />
                       <span className="ml-2">View Project</span>
@@ -331,7 +365,7 @@ export default function App() {
                       </Button>
                     </div>
                   ) : (
-                    <Button onClick={() => window.open(project.link, "_blank")} style={{...(project.title.includes("Alzheimer") )}} variant="outline" size="sm" className="w-full">
+                    <Button onClick={() => window.open(project.link, "_blank")} variant="outline" size="sm" className="w-full">
                     <ExternalLinkIcon />
                     <span className="ml-2">View Project</span>
                     </Button>
@@ -348,8 +382,17 @@ export default function App() {
           <h4 className="mb-12 text-center">Education</h4>
           <Card className="edu container-sm">
             <CardHeader>
+              <CardTitle className='flex justify-between items-start'>Master of Science<div><Badge className='date' variant="outline">September 2026 - August 2027</Badge></div></CardTitle>
+              <CardDescription>Advanced Artificial Intelligence</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex justify-between items-center">
+                <span>University College Dublin</span>
+              </div>
+            </CardContent>
+            <CardHeader>
               <CardTitle className='flex justify-between items-start'>Bachelor of Technology<div><Badge className='date' variant="outline">August 2021 - March 2025</Badge></div></CardTitle>
-              <CardDescription>Artificial Intelligence and Data Science</CardDescription> 
+              <CardDescription>Artificial Intelligence and Data Science</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex justify-between items-center">
