@@ -127,7 +127,7 @@ export default function App() {
   const experience = [
     {
       title: "AI Engineer Consultant",
-      previousRole: "Promoted from AI Intern · February 2026 – May 2026",
+      previousRole: "AI Intern · February 2026 – May 2026",
       company: "Infiswift Technologies",
       location: "Pune, India",
       period: "June 2026 – Present",
@@ -299,7 +299,7 @@ export default function App() {
                     <div>
                       <CardTitle>{exp.title}</CardTitle>
                       {exp.previousRole && (
-                        <p className="text-sm text-muted mt-0.5">{exp.previousRole}</p>
+                        <Badge variant="outline" className="w-fit">{exp.previousRole}</Badge>
                       )}
                       <CardDescription className="flex items-center gap-2 mt-1">
                         <span>{exp.company}</span>
