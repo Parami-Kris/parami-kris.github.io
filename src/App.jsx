@@ -130,7 +130,7 @@ export default function App() {
       previousRole: "AI Intern · February 2026 – May 2026",
       company: "Infiswift Technologies",
       location: "Pune, India",
-      period: "June 2026 – Present",
+      period: "June 2026 – August 2026",
       achievements: [
         "• Built an AI extraction pipeline (LangGraph, Google Gemini, Docling) to parse complex technical PDF blueprints into validated structured JSON (layout geometry, equipment metadata, numeric parameters) for downstream automation.",
         "• Developed Python desktop automation (Pywinauto, Pandas) on Windows EC2 to drive legacy GUI applications programmatically, with AMI/userdata bootstrap so workers start with env, credentials, and run config prewired.",
@@ -186,7 +186,7 @@ export default function App() {
   const projects = [
     {
       title: "AI Talent Intelligence Platform",
-      period: "July 2026 – Present",
+      period: "July 2026 – August 2026",
       description: "• Built and deployed a full-stack AI recruiting platform (FastAPI, React/TypeScript, MySQL) using Docling + Gemini LLMs for resume/JD parsing and evidence-backed candidate ranking, plus job-seeker qualification-gap analysis, multi-candidate comparison and CSV export.\n• Designed a LangGraph-orchestrated ranking pipeline with a human-in-the-loop review checkpoint, persisting state to MySQL so recruiter decisions survive process restarts.\n• Built a job search feature aggregating live listings (SerpApi) with LLM-based (Groq) query expansion, plus a personalized recommendation layer that weights each candidate's view/apply/like activity to rank and suggest jobs, even with no search keyword entered.\n• Built a synthetic benchmark suite (pytest-integrated) validating ranking-pipeline correctness across eligibility gating, job-hopper detection, and edge-case fallback scenarios.",
       technologies: ["FastAPI", "React", "TypeScript", "LangGraph", "Gemini", "MySQL", "Docling", "pytest"],
       link: "https://parami-kris.github.io/AI-Talent-Intelligence-Platform/",
@@ -194,7 +194,7 @@ export default function App() {
     },
     {
       title: "LLM-Based Dynamic Query Portal for SQL Databases",
-      period: "April 2025 – Present",
+      period: "April 2025 – May 2025",
       description: "• Built a natural-language-to-SQL query engine (Claude API, Flask) that translates admin questions into SQL, executed against a live MySQL database through a 3-layer defense (statement guard, EXPLAIN-based schema validation, read-only DB user) blocking malformed or unsafe queries.\n• Added question-level caching and rate limiting (Flask-Limiter) to control API cost and abuse, plus a semantic search fallback (sentence-transformer embeddings) for free-text queries and a /dashboard endpoint for aggregate stats.\n• Containerized and deployed via GitHub Actions CI/CD to Hugging Face Spaces; enables event administrators to query ~500 groups / ~1,000 attendees via natural language instead of manual spreadsheet lookups.",
       technologies: ["Claude API", "Flask", "MySQL", "Sentence-Transformer Embeddings", "Docker", "GitHub Actions"],
       link: "https://query-ssr.netlify.app/",
@@ -237,9 +237,9 @@ export default function App() {
           <Card className="me container-md" >
             <CardContent className='bout'>
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
-                 &rarr; I'm an AI Engineer Consultant at Infiswift Technologies, with a B.Tech in Artificial Intelligence and Data Science from Easwari Engineering College (2025). I'm about to begin my M.Sc in Advanced Artificial Intelligence at University College Dublin this September. <br></br><br></br>
-                 &rarr; My path so far has run through AI extraction pipelines, trading systems, and full-stack web development, across roles at Infiswift Technologies and SEnergy. <br></br><br></br> &rarr; I've built projects like the <a href='https://parami-kris.github.io/AI-Talent-Intelligence-Platform/' id='pg'>AI Talent Intelligence Platform</a> — a full-stack recruiting platform with LangGraph-orchestrated ranking and evidence-backed candidate scoring — an Early Alzheimer's detection model
-                using deep learning, and fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>, blending creativity with code to solve real-world problems.<br></br><br></br>
+                 &rarr; I'm currently pursuing M.Sc in Advanced Artificial Intelligence at University College Dublin (September 2026 - August 2027). I'm allowed to work a 20-hour part-time until April 2027 and full-time therafter.<br></br><br></br>
+                 &rarr; My path so far has run through AI extraction pipelines, trading systems, and full-stack web development, across roles at Infiswift Technologies and SEnergy, with a B.Tech in Artificial Intelligence and Data Science from Easwari Engineering College (2021-2025). <br></br><br></br> &rarr; I've built projects like the <a href='https://parami-kris.github.io/AI-Talent-Intelligence-Platform/' id='pg'>AI Talent Intelligence Platform</a> — a full-stack recruiting platform with LangGraph-orchestrated ranking and evidence-backed candidate scoring — an Early Alzheimer's detection model
+                using machine learning, and fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>, blending creativity with code to solve real-world problems.<br></br><br></br>
                 &rarr; I'm particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, orchestrating LLM pipelines with LangGraph, and
                 integrating APIs like Gemini, Claude, and Groq to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I'm not coding, I'm often exploring new ideas in AI, sharpening my
                 problem-solving skills through DSA, or collaborating on innovative tech projects.
@@ -436,7 +436,7 @@ export default function App() {
                 </Button>
                 <Button style={{background: 'none',border: 'none', color: 'inherit',cursor: 'text',userSelect: 'text'}} variant="outline" size='m'>
                   <PhoneIcon />
-                  <span style={{ marginLeft: '0.2rem' }}>+91 9940084228</span>
+                  <span style={{ marginLeft: '0.2rem' }}>+353 899525693</span>
                 </Button>
                 <Button onClick={() =>  window.open("https://www.linkedin.com/in/parami-kris/", "_blank")} variant="ghost" size="m" >
                   <LinkedinIcon />
