@@ -118,9 +118,9 @@ const Separator = ({ orientation = "horizontal", className = "" }) => (
 export default function App() {
 
   const skills = {
-    "Languages & Libraries": ["Python", "ReactJS", "HTML", "CSS", "FastAPI", "RestAPI", "TensorFlow"],
-    "AI & Data Science": ["Machine Learning", "Deep Learning", "Natural Language Processing", "LLM", "Langchain", "LangGraph", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Gradient Boosting", "Prompt Engineering", "Data Visualization", "Data Mining"],
-    "Tools & Platforms": ["MySQL", "Power BI", "Git", "KNIME", "Robotic Process Automation (RPA)", "AWS", "Docling"],
+    "Languages & Libraries": ["Python", "JavaScript", "TypeScript", "ReactJS", "HTML", "CSS", "FastAPI", "RestAPI", "TensorFlow"],
+    "AI & Data Science": ["Machine Learning", "Deep Learning", "Natural Language Processing", "LLM", "Langchain", "LangGraph", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Gradient Boosting", "Prompt Engineering", "Sentence-Transformer Embeddings", "Data Visualization", "Data Mining"],
+    "Tools & Platforms": ["MySQL", "Power BI", "Git", "pytest", "Docker", "Hugging Face Spaces", "Docling", "AWS", "KNIME", "Robotic Process Automation (RPA)"],
     "Core": ["Data Structures & Algorithms", "Object-Oriented Programming (OOPs)", "Software Engineering Fundamentals", "CI/CD"]
   };
 
@@ -244,7 +244,7 @@ export default function App() {
           <Card className="me container-md" >
             <CardContent className='bout'>
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
-                 &rarr; I'm currently pursuing M.Sc in Advanced Artificial Intelligence at University College Dublin (September 2026 - August 2027). I'm allowed to work a 20-hour part-time until May 2027 and full-time thereafter.<br></br><br></br>
+                 &rarr; I'm currently pursuing M.Sc in Advanced Artificial Intelligence at University College Dublin (September 2026 - August 2027). I'm allowed to work a 20-hour part-time until April 2027 and full-time thereafter.<br></br><br></br>
                  &rarr; My path so far has run through AI extraction pipelines, trading systems, and full-stack web development, across roles at Infiswift Technologies and SEnergy, with a B.Tech in Artificial Intelligence and Data Science from Easwari Engineering College (2021-2025). <br></br><br></br> &rarr; I've built projects like <a href='https://github.com/Parami-Kris/market-copilot' id='pg'>Market Copilot</a> — a LangGraph agent for investing research and risk analysis — the <a href='https://parami-kris.github.io/AI-Talent-Intelligence-Platform/' id='pg'>AI Talent Intelligence Platform</a> — a full-stack recruiting platform with LangGraph-orchestrated ranking and evidence-backed candidate scoring — a machine-learning model for Alzheimer's diagnosis and progression
                 prediction, and fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>, blending creativity with code to solve real-world problems.<br></br><br></br>
                 &rarr; I'm particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, orchestrating LLM pipelines with LangGraph, and
