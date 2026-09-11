@@ -118,10 +118,10 @@ const Separator = ({ orientation = "horizontal", className = "" }) => (
 export default function App() {
 
   const skills = {
-    "Languages & Libraries": ["Python", "JavaScript", "TypeScript", "ReactJS", "HTML", "CSS", "FastAPI", "RestAPI", "TensorFlow"],
-    "AI & Data Science": ["Machine Learning", "Deep Learning", "Natural Language Processing", "LLM", "LangGraph", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Prompt Engineering", "Sentence-Transformer Embeddings", "Data Visualization", "Data Mining"],
-    "Tools & Platforms": ["MySQL", "Power BI", "Git", "pytest", "Docker", "Hugging Face Spaces", "Docling", "AWS", "KNIME", "Robotic Process Automation (RPA)"],
-    "Core": ["Data Structures & Algorithms", "Object-Oriented Programming (OOPs)", "Software Engineering Fundamentals"]
+    "Languages & Libraries": ["Python", "ReactJS", "HTML", "CSS", "FastAPI", "RestAPI", "TensorFlow"],
+    "AI & Data Science": ["Machine Learning", "Deep Learning", "Natural Language Processing", "LLM", "Langchain", "LangGraph", "Autoencoders", "Time Series Modeling (LSTM)", "Attention Mechanisms", "Gradient Boosting", "Prompt Engineering", "Data Visualization", "Data Mining"],
+    "Tools & Platforms": ["MySQL", "Power BI", "Git", "KNIME", "Robotic Process Automation (RPA)", "AWS", "Docling"],
+    "Core": ["Data Structures & Algorithms", "Object-Oriented Programming (OOPs)", "Software Engineering Fundamentals", "CI/CD"]
   };
 
   const experience = [
@@ -134,8 +134,8 @@ export default function App() {
       achievements: [
         "• Built an AI extraction pipeline (LangGraph, Google Gemini, Docling) to parse complex technical PDF blueprints into validated structured JSON (layout geometry, equipment metadata, numeric parameters) for downstream automation.",
         "• Developed Python desktop automation (Pywinauto, Pandas) on Windows EC2 to drive legacy GUI applications programmatically, with AMI/userdata bootstrap so workers start with env, credentials, and run config prewired.",
-        "• Integrated EC2 workers with backend services via AWS SQS (command/status, async job lifecycle), S3 (inputs/outputs), and MySQL (state and results persistence).",
-        "• Supported delivery through Jenkins (Docker integration tests) and cross-team collaboration via GitHub and Jira."
+        "• Integrated EC2 workers with backend services via AWS SQS (command/status, async job lifecycle), S3 (inputs/outputs), and MySQL (state and results persistence); built a Jenkins test pipeline to catch bugs in the automation tool before deployment.",
+        "• Built an automated alerting system (AWS Lambda, DynamoDB, CloudWatch, SNS) that flags application errors, server crashes, and unresponsive endpoints in Slack — designed so a real outage triggers exactly one alert, not a flood of duplicates or a silent miss."
       ]
     },
     {
@@ -185,6 +185,13 @@ export default function App() {
 
   const projects = [
     {
+      title: "Market Copilot — AI Investing Research & Risk Co-pilot",
+      period: "August 2026 – Present",
+      description: "• Built a LangGraph agent that routes each query across a local vector KB (Chroma), a trained risk model, and a web-search fallback (SerpApi) — escalating to web search only when KB retrieval confidence falls below a calibrated threshold, rather than refusing or hallucinating.\n• Trained a gradient-boosting risk model on ~120K rows of historical market data with a time-based train/test split, outperforming a naive baseline; its output is fed to an LLM that explains the score in plain English.\n• Built a walk-forward backtester (no look-ahead, transaction costs modeled) to compare strategies out-of-sample against a buy-and-hold benchmark; integrated live quotes (Firstock API) and company fundamentals (yfinance).",
+      technologies: ["LangGraph", "FastAPI", "React", "TypeScript", "Chroma", "Gradient Boosting", "SerpApi"],
+      link: "https://github.com/Parami-Kris/market-copilot"
+    },
+    {
       title: "AI Talent Intelligence Platform",
       period: "July 2026 – August 2026",
       description: "• Built and deployed a full-stack AI recruiting platform (FastAPI, React/TypeScript, MySQL) using Docling + Gemini LLMs for resume/JD parsing and evidence-backed candidate ranking, plus job-seeker qualification-gap analysis, multi-candidate comparison and CSV export.\n• Designed a LangGraph-orchestrated ranking pipeline with a human-in-the-loop review checkpoint, persisting state to MySQL so recruiter decisions survive process restarts.\n• Built a job search feature aggregating live listings (SerpApi) with LLM-based (Groq) query expansion, plus a personalized recommendation layer that weights each candidate's view/apply/like activity to rank and suggest jobs, even with no search keyword entered.\n• Built a synthetic benchmark suite (pytest-integrated) validating ranking-pipeline correctness across eligibility gating, job-hopper detection, and edge-case fallback scenarios.",
@@ -201,10 +208,10 @@ export default function App() {
       sourceCodeLink: 'https://github.com/Parami-Kris/render-backend/'
     },
     {
-      title: "Early Detection of Alzheimer's using Deep Learning",
+      title: "Machine Learning for Alzheimer's Diagnosis & Progression (ADNI)",
       period: "August 2024 – March 2025",
-      description: "• Collected brain image and biomarker data from the ADNI dataset and preprocessed it; trained and deployed deep learning models for medical diagnostics with a Streamlit front-end UI.\n• Built a combined model with feature extraction via ResNet + custom CNN and Autoencoders + MLP, hypertuning parameters to an accuracy of 83%.\n• Implemented LSTM for progression prediction with an Attention mechanism, reaching an accuracy of 86%.",
-      technologies: ["ResNet", "CNN (Convolutional Neural Nets)", "Autoencoders", "MLP (Multi-Layer Perceptron)", "LSTM", "Attention Mechanism", "Streamlit"],
+      description: "• Built a LightGBM gradient-boosting classifier on multimodal ADNI data (MRI-derived brain measurements, CSF biomarkers, PET scans, genetic risk markers) to classify 3,182 patients as cognitively normal, mildly impaired, or Alzheimer's, achieving 67% accuracy under patient-level 5-fold cross-validation against a 44% majority-class baseline.\n• Built a survival-analysis model to estimate time-to-progression risk for patients with mild cognitive impairment, trained and validated on 1,279 patient records.\n• Benchmarked 2D and 3D convolutional neural networks on raw MRI scans against the tabular model, found no accuracy gain, and did not adopt the approach; deployed the final models via a Streamlit web application.",
+      technologies: ["LightGBM", "Gradient Boosting", "Survival Analysis", "Streamlit"],
       link: "https://drive.google.com/file/d/1AgF2NKZiPs1RHWf8h3YvC16WyKJr3z4y/view?usp=drive_link"
     }
   ];
@@ -237,9 +244,9 @@ export default function App() {
           <Card className="me container-md" >
             <CardContent className='bout'>
               <p className="text-m leading-relaxed text-center" style={{textAlign:'justify'}}>
-                 &rarr; I'm currently pursuing M.Sc in Advanced Artificial Intelligence at University College Dublin (September 2026 - August 2027). I'm allowed to work a 20-hour part-time until April 2027 and full-time therafter.<br></br><br></br>
-                 &rarr; My path so far has run through AI extraction pipelines, trading systems, and full-stack web development, across roles at Infiswift Technologies and SEnergy, with a B.Tech in Artificial Intelligence and Data Science from Easwari Engineering College (2021-2025). <br></br><br></br> &rarr; I've built projects like the <a href='https://parami-kris.github.io/AI-Talent-Intelligence-Platform/' id='pg'>AI Talent Intelligence Platform</a> — a full-stack recruiting platform with LangGraph-orchestrated ranking and evidence-backed candidate scoring — an Early Alzheimer's detection model
-                using machine learning, and fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>, blending creativity with code to solve real-world problems.<br></br><br></br>
+                 &rarr; I'm currently pursuing M.Sc in Advanced Artificial Intelligence at University College Dublin (September 2026 - August 2027). I'm allowed to work a 20-hour part-time until May 2027 and full-time thereafter.<br></br><br></br>
+                 &rarr; My path so far has run through AI extraction pipelines, trading systems, and full-stack web development, across roles at Infiswift Technologies and SEnergy, with a B.Tech in Artificial Intelligence and Data Science from Easwari Engineering College (2021-2025). <br></br><br></br> &rarr; I've built projects like <a href='https://github.com/Parami-Kris/market-copilot' id='pg'>Market Copilot</a> — a LangGraph agent for investing research and risk analysis — the <a href='https://parami-kris.github.io/AI-Talent-Intelligence-Platform/' id='pg'>AI Talent Intelligence Platform</a> — a full-stack recruiting platform with LangGraph-orchestrated ranking and evidence-backed candidate scoring — a machine-learning model for Alzheimer's diagnosis and progression
+                prediction, and fullstack webpages like <a href='https://sacredseva.org/' id='pg'>sacredseva.org</a> and <a href='https://query-ssr.netlify.app/'id='pg'>query-ssr.netlify</a>, blending creativity with code to solve real-world problems.<br></br><br></br>
                 &rarr; I'm particularly drawn to building responsive, functional apps that make AI and data tools more accessible. I enjoy experimenting with GenAI technologies, orchestrating LLM pipelines with LangGraph, and
                 integrating APIs like Gemini, Claude, and Groq to create powerful, user-friendly tools. <br></br><br></br>&rarr; When I'm not coding, I'm often exploring new ideas in AI, sharpening my
                 problem-solving skills through DSA, or collaborating on innovative tech projects.
