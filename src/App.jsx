@@ -127,10 +127,10 @@ export default function App() {
   const experience = [
     {
       title: "AI Engineer Consultant",
-      previousRole: "AI Intern · February 2026 – May 2026",
+      previousRole: "Previously: AI Intern",
       company: "Infiswift Technologies",
       location: "Pune, India",
-      period: "June 2026 – August 2026",
+      period: "February 2026 – August 2026",
       achievements: [
         "• Built an AI extraction pipeline (LangGraph, Google Gemini, Docling) to parse complex technical PDF blueprints into validated structured JSON (layout geometry, equipment metadata, numeric parameters) for downstream automation.",
         "• Developed Python desktop automation (Pywinauto, Pandas) on Windows EC2 to drive legacy GUI applications programmatically, with AMI/userdata bootstrap so workers start with env, credentials, and run config prewired.",
