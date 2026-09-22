@@ -347,7 +347,7 @@ export default function App() {
               <Card key={index} className="h-full flex flex-col">
                 <CardHeader>
                   <div className="flex flex-col gap-2">
-                    <CardTitle className="leading-tight">{project.title}</CardTitle>
+                    <CardTitle className="leading-normal">{project.title}</CardTitle>
                     <Badge variant="outline" className="flex items-center gap-1 whitespace-nowrap w-fit">
                       <CalendarIcon />
                       <span>{project.period}</span>
